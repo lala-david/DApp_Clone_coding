@@ -2,29 +2,34 @@
 
 <H2>🐚 Index</H2>
 
-- [✅ ] #0 Introduce Dapp
+[✅] #0 Introduce Dapp
 
-- [ ] #1 Smart Contract - NFT
+[✅] #1 Smart Contract - NFT
 
-- [ ] #2 Smart Contract - Sale Contract
+[✅] #2 Smart Contract - Sale Contract
 
 - [ ] #3 Dapp - React(NextJS) + Typescript
 
-<H2>🐚 Customs change </H2>
+<H2>🐚 Customizing </H2>
 
-- [ ] 클레이튼 바오밥 테스트 넷 및 클레이튼 IDE 문제로 Remix IDE로 변경
+[✔] 클레이튼 바오밥 테스트 넷 및 클레이튼 IDE 문제로 Remix IDE로 변경
 ```
 // 터미널에 입력
 remixd -s . --remix-ide https://remix.ethereum.org
 ```
-- [ ] 클레이튼 바오밥 테스트 넷에서 이더리움 테스트 넷으로 변경
+[✔] 클레이튼 바오밥 테스트 넷에서 이더리움 테스트 넷으로 변경
 ```
 // 해당 사이트에서 ETHEREUM SEPOLIA 받기
 https://sepoliafaucet.com/
 ```
-- [ ] _METADATAURI 입력은 Pinta IPFS에 올린 MetaData Json파일의 CID를 입력
+[✔] _METADATAURI 입력은 Pinta IPFS에 올린 MetaData Json파일의 CID를 입력
 ```
 ipfs://<MetaData Json CID 입력>
+```
+[✔] 클레이튼 지갑 연결 안하고 metamask로 변경 
+```
+window.klaytn.enable(); ➡ window.ethereum.request({ method: 'eth_requestAccounts' });
+if(window.klaytn){} ➡ if(window.ethereum){}
 ```
 
  <H2>🐚 Clone Coding Info </H2>

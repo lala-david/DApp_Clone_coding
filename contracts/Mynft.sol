@@ -10,7 +10,7 @@ contract MyNft is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    // 원하는 이름과 심볼을 입력합니다.
+    // 입력 및 심볼
     constructor() ERC721("chicken", "symbol") Ownable(msg.sender) {}
 
     function mintNFT(address recipient, string memory tokenURI)

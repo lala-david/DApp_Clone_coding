@@ -950,7 +950,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"MintGemToken.sol": "MintGemToken"
+			"contracts/MintGemToken.sol": "MintGemToken"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -1076,7 +1076,7 @@
 				"dweb:/ipfs/QmVBEei6aTnvYNZp2CHYVNKyZS4q1KkjANfY39WVXZXVoT"
 			]
 		},
-		"MintGemToken.sol": {
+		"contracts/MintGemToken.sol": {
 			"keccak256": "0x75b1e8537d2f578d63a776fc6447dcac1a108746c63f6f9bc86492dc0f39985e",
 			"license": "MIT",
 			"urls": [

@@ -2,7 +2,7 @@
 
 <H2>🐚 Index</H2>
 
-- [ ] #0 Introduce Dapp
+- [✅ ] #0 Introduce Dapp
 
 - [ ] #1 Smart Contract - NFT
 

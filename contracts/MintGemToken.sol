@@ -1,16 +1,18 @@
 // SPDX-License-Identifier: MIT
-
 pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
+import "./IERC4906.sol";
 
-contract MintGemToken is ERC721Enumerable, Ownable {
+
+contract MintGemToken is ERC721Enumerable, Ownable, IERC4906  {
     // nft 발행량 
     uint constant public MAX_TOKEN_COUNT = 1000;
     uint constant public TOKEN_RANK_LENGTH = 4;
     uint constant public TOKEN_TYPE_LENGTH = 4;
+    
 
     string public metadataURI;
 
@@ -49,7 +51,7 @@ contract MintGemToken is ERC721Enumerable, Ownable {
         gemTokenData[tokenId] = GemTokenData(randomTokenData.gemTokenRank, randomTokenData.gemTokenType);
 
         gemTokenCount[randomTokenData.gemTokenRank - 1][randomTokenData.gemTokenType -1] +=1;
-
+        emit MetadataUpdate(tokenId);
         payable(owner()).transfer(msg.value);
 
         _mint(msg.sender, tokenId);

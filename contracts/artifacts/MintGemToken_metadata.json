@@ -226,6 +226,38 @@
 				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_fromTokenId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_toTokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "BatchMetadataUpdate",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "MetadataUpdate",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
 						"indexed": true,
 						"internalType": "address",
 						"name": "previousOwner",
@@ -879,6 +911,12 @@
 				"ApprovalForAll(address,address,bool)": {
 					"details": "Emitted when `owner` enables or disables (`approved`) `operator` to manage all of its assets."
 				},
+				"BatchMetadataUpdate(uint256,uint256)": {
+					"details": "This event emits when the metadata of a range of tokens is changed. So that the third-party platforms such as NFT market could timely update the images and related attributes of the NFTs."
+				},
+				"MetadataUpdate(uint256)": {
+					"details": "This event emits when the metadata of a token is changed. So that the third-party platforms such as NFT market could timely update the images and related attributes of the NFT."
+				},
 				"Transfer(address,address,uint256)": {
 					"details": "Emitted when `tokenId` token is transferred from `from` to `to`."
 				}
@@ -1076,12 +1114,20 @@
 				"dweb:/ipfs/QmVBEei6aTnvYNZp2CHYVNKyZS4q1KkjANfY39WVXZXVoT"
 			]
 		},
-		"contracts/MintGemToken.sol": {
-			"keccak256": "0x75b1e8537d2f578d63a776fc6447dcac1a108746c63f6f9bc86492dc0f39985e",
+		"contracts/IERC4906.sol": {
+			"keccak256": "0xe3c140c68684f9d78e28aec23f008637bd03809a700e5a6c7b850f872e2aa0d6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9eafe535d33a7b76eac16a9daf1387b71f1e1a683a6d7d5a99e5da30376f20c3",
-				"dweb:/ipfs/QmSDiNXRnW8S72afRfULKs32Zj3MVapYYor1jURtZgkHg2"
+				"bzz-raw://a9a17102b62385061776889d911bb66e64337eea81ddba43c7a1496adac453fb",
+				"dweb:/ipfs/QmYPJq7NJwJKFf1u76rqqSRovFAnEs1Bu7bbnPgphbWqqr"
+			]
+		},
+		"contracts/MintGemToken.sol": {
+			"keccak256": "0xcad814bee6239b1b2c4cc3ab49792089cfc5da9e6190006c856218c684a0e77f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://191b894f9fbde1ff17eae09120ed42480ba7ac0e1691cbad83ab5d185b7c78b1",
+				"dweb:/ipfs/QmXeExNKokJwsPJRXrrACXYp4ABEagtYNpAF3tyQdKJMJR"
 			]
 		}
 	},

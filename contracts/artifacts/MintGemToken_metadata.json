@@ -988,7 +988,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/MintGemToken.sol": "MintGemToken"
+			"MintGemToken.sol": "MintGemToken"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -1114,7 +1114,7 @@
 				"dweb:/ipfs/QmVBEei6aTnvYNZp2CHYVNKyZS4q1KkjANfY39WVXZXVoT"
 			]
 		},
-		"contracts/IERC4906.sol": {
+		"IERC4906.sol": {
 			"keccak256": "0xe3c140c68684f9d78e28aec23f008637bd03809a700e5a6c7b850f872e2aa0d6",
 			"license": "MIT",
 			"urls": [
@@ -1122,7 +1122,7 @@
 				"dweb:/ipfs/QmYPJq7NJwJKFf1u76rqqSRovFAnEs1Bu7bbnPgphbWqqr"
 			]
 		},
-		"contracts/MintGemToken.sol": {
+		"MintGemToken.sol": {
 			"keccak256": "0xcad814bee6239b1b2c4cc3ab49792089cfc5da9e6190006c856218c684a0e77f",
 			"license": "MIT",
 			"urls": [
